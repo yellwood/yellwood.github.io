@@ -10,8 +10,9 @@ table#tlayout {
 
 body {	
 	/*background: white;*/
-	background: #CDCDCD;/* added by Xiaolin */
-	font-family: Georgia, serif;
+	background: #fafafa;/* added by Xiaolin */
+	/*font-family: Georgia, serif;*/
+	font-family: Optima, Candara, Calibri, Arial, sans-serif;
 	padding-bottom: 8px;
 	font-size: 1.2em; /* added by Xiaolin */
 	/*font-size: 46px;  added by Xiaolin 	*/
@@ -31,11 +32,12 @@ body {
 	padding-left: 8px;
 	padding-right: 8px;	
 	/*font-size: 1.0em;*/
-	font-size: 1.2em; /* added by Xiaolin */
+	font-size: 1.2em;  /*added by Xiaolin */
 	width: auto;
 	/*width: 100px;  added by Xiaolin */
 	white-space: nowrap;
-    text-align: left;
+    /*text-align: left;*/
+	text-align: right;    added by Xiaolin 
     vertical-align: top;
 }
 
