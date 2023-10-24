@@ -24,8 +24,9 @@ body {
 }
 
 #layout-menu {
-	background: #f6f6f6;
-	border: 0.5px solid #dddddd;
+	background: #f8f8f8; /* menu background color*/
+/*	border: 0.5px solid #dddddd;*/
+	border: 0.5px solid #fafafa;
 	border-top-left-radius: 16px; /* added by Xiaolin */
 	border-bottom-left-radius: 16px; /* added by Xiaolin */
 	padding-top: 0.5em;
@@ -75,7 +76,7 @@ pre, tt {
 }
 
 a, a > tt {
-	color: #25a1e8;  /*used for link text color*/
+	color: #0e95e3;  /*used for link text color*/
 	text-decoration: none;
 }
 
@@ -84,15 +85,15 @@ a:hover {
 }
 
 #layout-menu a.current:link, #layout-menu a.current:visited {
-	color: #25a1e8; /*used for link text color*/
+	color: #0e95e3; /*used for link text color*/
 	border-bottom: 1px gray solid;	
 }
 #layout-menu a:link, #layout-menu a:visited, #layout-menu a:hover {
-	color: #25a1e8;  /*menu text color*/
+	color: #0e95e3;  /*menu text color*/
 	text-decoration: none;
 }
 #layout-menu a:hover {
-	color: #0074bb;  /*menu text color*/
+	color: #0e95e3;  /*menu text color*/
 	text-decoration: none;
 }
 
