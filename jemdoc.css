@@ -140,8 +140,8 @@ strong {
 
 
 h1, h2, h3 {
-	font-style: Courier New;
-	font-weight: 666;
+	font-style: Fantasy;
+	font-weight: bold;
 	color: #25a1e8 /*#527bbd*/; 
 	margin-top: 0.7em;
 	margin-bottom: 0.3em;
@@ -398,4 +398,5 @@ img {
 table.imgtable, table.imgtable td {
     border: none;  
     text-align: left;
+/*    margin-top: 1em;*/
 }
