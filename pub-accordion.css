@@ -1,0 +1,33 @@
+/* Publication year accordion (jemdoc raw HTML <details>/<summary>) */
+details.pubyear { margin: 0.4em 0 0.9em 0; }
+
+details.pubyear > summary {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 120%;
+  color: #527bbd; /* match jemdoc heading color */
+  list-style: none;
+}
+
+/* Remove default marker in some browsers; keep a custom one via ::before */
+details.pubyear > summary::-webkit-details-marker { display: none; }
+details.pubyear > summary::before {
+  content: "▸";
+  display: inline-block;
+  width: 1.2em;
+}
+details.pubyear[open] > summary::before { content: "▾"; }
+
+details.pubyear[open] > summary { margin-bottom: 0.4em; }
+details.pubyear > summary a { color: inherit; }
+details.pubyear > summary a:hover { border-bottom: none; }
+
+/* Slight indent for the year content */
+details.pubyear > *:not(summary) { margin-left: 0.6em; }
+
+
+.pub-jumpto { margin: 0.6em 0 0.8em 0; }
+.pub-jumpto a { margin-right: 0.5em; }
+
+
+.pub-jumplink { margin-right: 0.6em; }
