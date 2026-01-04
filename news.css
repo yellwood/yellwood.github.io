@@ -1,0 +1,27 @@
+/* =========================
+   News category labels
+   Modern academic palette
+   ========================= */
+
+/* Publication — deep blue-gray */
+.news-pub {
+  color: #2f4f6f;
+  font-weight: 600;
+}
+
+/* Award — muted gold */
+.news-award {
+  color: #8a6d3b;
+  font-weight: 600;
+}
+
+/* Activity — soft violet-gray */
+.news-activity {
+  color: #6b5f8e;
+  font-weight: 600;
+}
+
+/* Service — teal-gray */
+.news-service {
+  color: #4f7f7a;
+  font-weig
