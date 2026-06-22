@@ -8,7 +8,7 @@
   --canvas: #fafafa;
   --accent-soft: #e3f1fa;
   --soft-blue: #f3f8fb;
-  --link: #0e95e3;
+  --link: #0879bb;
   --shadow: 0 16px 45px rgba(45, 83, 105, 0.09);
 }
 
@@ -126,7 +126,7 @@ a {
 }
 
 a:hover {
-  color: var(--accent-dark);
+  color: #055b8d;
 }
 
 a:focus-visible,
@@ -455,6 +455,15 @@ div#footer {
   color: var(--muted);
   border-top: 1px solid var(--line);
   font-size: 0.82rem;
+}
+
+#site-footer {
+  margin-top: 3.5rem;
+  padding-top: 1rem;
+  color: var(--muted);
+  border-top: 1px solid var(--line);
+  font-size: 0.82rem;
+  text-align: left;
 }
 
 @media (max-width: 900px) {
