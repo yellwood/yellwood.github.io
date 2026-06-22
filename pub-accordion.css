@@ -1,33 +1,54 @@
-/* Publication year accordion (jemdoc raw HTML <details>/<summary>) */
-details.pubyear { margin: 0.4em 0 0.9em 0; }
+details.pubyear {
+  margin: 0.7rem 0;
+  padding: 0 16px;
+  background: #fafbfc;
+  border: 1px solid var(--line);
+  border-radius: 11px;
+}
 
 details.pubyear > summary {
+  margin: 0 -16px;
+  padding: 13px 16px;
+  color: var(--ink);
   cursor: pointer;
-  font-weight: 700;
-  font-size: 120%;
-  color: #527bbd; /* match jemdoc heading color */
+  font-size: 1.08rem;
+  font-weight: 760;
   list-style: none;
 }
 
-/* Remove default marker in some browsers; keep a custom one via ::before */
-details.pubyear > summary::-webkit-details-marker { display: none; }
-details.pubyear > summary::before {
-  content: "▸";
-  display: inline-block;
-  width: 1.2em;
+details.pubyear > summary::-webkit-details-marker {
+  display: none;
 }
-details.pubyear[open] > summary::before { content: "▾"; }
 
-details.pubyear[open] > summary { margin-bottom: 0.4em; }
-details.pubyear > summary a { color: inherit; }
-details.pubyear > summary a:hover { border-bottom: none; }
+details.pubyear > summary::before {
+  display: inline-block;
+  width: 1.25em;
+  color: var(--accent);
+  content: "+";
+}
 
-/* Slight indent for the year content */
-details.pubyear > *:not(summary) { margin-left: 0.6em; }
+details.pubyear[open] > summary::before {
+  content: "-";
+}
 
+details.pubyear[open] > summary {
+  margin-bottom: 8px;
+  border-bottom: 1px solid var(--line);
+}
 
-.pub-jumpto { margin: 0.6em 0 0.8em 0; }
-.pub-jumpto a { margin-right: 0.5em; }
+details.pubyear > summary a {
+  color: inherit;
+  text-decoration: none;
+}
 
-
-.pub-jumplink { margin-right: 0.6em; }
+.pub-jumplink {
+  display: inline-block;
+  margin: 0 4px 7px 0;
+  padding: 3px 9px;
+  background: var(--soft-blue);
+  border: 1px solid #d8e3eb;
+  border-radius: 999px;
+  font-size: 0.86rem;
+  font-weight: 700;
+  text-decoration: none;
+}
