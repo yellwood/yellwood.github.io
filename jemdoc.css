@@ -232,6 +232,7 @@ table.imgtable td:first-child {
 }
 
 .profile-hero .imgtable img {
+  display: block;
   width: 170px;
   min-width: 170px;
   aspect-ratio: 1;
@@ -239,14 +240,32 @@ table.imgtable td:first-child {
   box-shadow: 0 10px 30px rgba(23, 33, 43, 0.13);
 }
 
+.profile-hero .imgtable td:first-child {
+  font-size: 0;
+  line-height: 0;
+}
+
 .profile-hero .imgtable td {
   vertical-align: middle;
 }
 
+.profile-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 170px;
+}
+
 .profile-hero h1 {
-  padding-bottom: 12px;
+  margin: 0;
+  padding-bottom: 7px;
   border-bottom: 3px solid var(--accent);
-  font-size: clamp(2rem, 3.4vw, 2.5rem);
+  font-size: clamp(1.65rem, 2.35vw, 1.85rem);
+}
+
+.profile-hero .imgtable p {
+  margin: 0;
+  line-height: 1.45;
 }
 
 .profile-role {
@@ -285,7 +304,8 @@ table.imgtable td:first-child {
 .profile-links {
   align-items: center;
   gap: 0;
-  margin: 0 0 1.5rem;
+  margin: 0;
+  line-height: 1.35;
 }
 
 .profile-links a {
@@ -293,7 +313,7 @@ table.imgtable td:first-child {
   align-items: center;
   padding: 2px 0;
   color: var(--link);
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   font-weight: 700;
   text-decoration: none;
 }
@@ -307,6 +327,36 @@ table.imgtable td:first-child {
 .profile-links a:hover {
   color: var(--link-hover);
   text-decoration: underline;
+}
+
+.news-archive-link {
+  margin: 0.45rem 0 1.5rem;
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.news-archive-link a {
+  text-decoration: none;
+}
+
+.news-archive-link a:hover {
+  text-decoration: underline;
+}
+
+.home-news ul,
+.news-list ul {
+  margin: 0.25rem 0 0.45rem;
+}
+
+.home-news li,
+.news-list li {
+  margin: 0.12rem 0;
+}
+
+.home-news li p,
+.news-list li p {
+  margin: 0 0 0.28rem;
+  line-height: 1.45;
 }
 
 div.infoblock,
@@ -568,6 +618,12 @@ div#footer {
     min-width: 132px;
   }
 
+  .profile-copy {
+    height: auto;
+    gap: 0.45rem;
+    justify-content: flex-start;
+  }
+
   .member-grid {
     grid-template-columns: 1fr;
   }
@@ -585,7 +641,7 @@ div#footer {
   }
 
   .profile-hero h1 {
-    font-size: 1.9rem;
+    font-size: 1.5rem;
   }
 }
 
