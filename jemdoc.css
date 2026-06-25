@@ -566,6 +566,26 @@ details.artifact-archive > ul > li,
   margin-bottom: 0.5rem;
 }
 
+.service-compact h2 {
+  margin-top: 1.55rem;
+  margin-bottom: 0.65rem;
+  padding-bottom: 0.45rem;
+}
+
+.service-compact ul {
+  margin: 0.2rem 0 0.65rem;
+}
+
+.service-compact li {
+  margin: 0.14rem 0;
+  line-height: 1.46;
+}
+
+.service-compact p {
+  margin-bottom: 0.5rem;
+  line-height: 1.46;
+}
+
 div#toptitle {
   margin-bottom: 1.4rem;
 }
