@@ -1,14 +1,14 @@
 details.pubyear {
-  margin: 0.7rem 0;
-  padding: 0 16px;
+  margin: 0.55rem 0;
+  padding: 0 14px;
   background: #fafbfc;
   border: 1px solid var(--line);
   border-radius: 11px;
 }
 
 details.pubyear > summary {
-  margin: 0 -16px;
-  padding: 13px 16px;
+  margin: 0 -14px;
+  padding: 11px 14px;
   color: var(--ink);
   cursor: pointer;
   font-size: 1.08rem;
@@ -32,7 +32,7 @@ details.pubyear[open] > summary::before {
 }
 
 details.pubyear[open] > summary {
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   border-bottom: 1px solid var(--line);
 }
 
@@ -41,9 +41,18 @@ details.pubyear > summary a {
   text-decoration: none;
 }
 
+details.pubyear > ul {
+  margin: 0.25rem 0 0.75rem;
+}
+
+details.pubyear > ul > li {
+  margin: 0.22rem 0;
+  line-height: 1.48;
+}
+
 .pub-jumplink {
   display: inline-block;
-  margin: 0 4px 7px 0;
+  margin: 0 4px 6px 0;
   padding: 3px 9px;
   background: var(--soft-blue);
   border: 1px solid #d8e3eb;

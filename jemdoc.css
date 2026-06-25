@@ -440,16 +440,16 @@ div.blockcontent p:last-child {
 }
 
 details.selected-works {
-  margin: 0 0 1.2rem;
-  padding: 0 16px;
+  margin: 0 0 1rem;
+  padding: 0 14px;
   background: #fafbfc;
   border: 1px solid var(--line);
   border-radius: 11px;
 }
 
 details.selected-works > summary {
-  margin: 0 -16px;
-  padding: 13px 16px;
+  margin: 0 -14px;
+  padding: 11px 14px;
   color: var(--accent-dark);
   cursor: pointer;
   font-weight: 750;
@@ -458,14 +458,17 @@ details.selected-works > summary {
 details.selected-works > ul {
   columns: 2;
   column-gap: 34px;
+  margin: 0.35rem 0 0.7rem;
 }
 
 details.selected-works > ul > li {
   break-inside: avoid;
+  margin: 0.22rem 0;
+  line-height: 1.48;
 }
 
 .artifact-github {
-  margin: 1.1rem 0 1.6rem;
+  margin: 0.9rem 0 1.35rem;
 }
 
 .artifact-github a {
@@ -478,24 +481,70 @@ details.selected-works > ul > li {
 }
 
 details.artifact-archive {
-  margin: 1.5rem 0 0;
-  padding: 0 16px;
+  margin: 1.15rem 0 0;
+  padding: 0 14px;
   background: #fafbfc;
   border: 1px solid var(--line);
   border-radius: 10px;
 }
 
 details.artifact-archive > summary {
-  margin: 0 -16px;
-  padding: 13px 16px;
+  margin: 0 -14px;
+  padding: 11px 14px;
   color: var(--accent-dark);
   cursor: pointer;
   font-weight: 750;
 }
 
 details.artifact-archive[open] > summary {
-  margin-bottom: 0.7rem;
+  margin-bottom: 0.45rem;
   border-bottom: 1px solid var(--line);
+}
+
+.artifact-list ul,
+details.artifact-archive > ul,
+.join-page ul,
+.support-list ul,
+.former-students ul {
+  margin: 0.25rem 0 0.75rem;
+}
+
+.artifact-list li,
+details.artifact-archive > ul > li,
+.join-page li,
+.support-list li,
+.former-students li {
+  margin: 0.2rem 0;
+  line-height: 1.5;
+}
+
+.join-page h2 {
+  margin-top: 1.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.join-page div.infoblock,
+.join-page div.codeblock {
+  margin: 1.05rem 0;
+}
+
+.join-page div.blocktitle {
+  padding: 8px 13px;
+}
+
+.join-page div.blockcontent {
+  padding: 12px 14px;
+}
+
+.support-list p,
+.former-students p {
+  margin-bottom: 0.55rem;
+  line-height: 1.5;
+}
+
+.former-students h3 {
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
 }
 
 div#toptitle {
