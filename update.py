@@ -1,10 +1,10 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import sys
 import os
 import re
 import time
-import StringIO
+import io as StringIO
 from subprocess import *
 import tempfile
 
